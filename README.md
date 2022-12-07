@@ -10,9 +10,11 @@ Built-Up Areas (2022) is the name ONS are using for this product. This is to ret
 Ordnance Survey’s [product information page]( https://www.ordnancesurvey.co.uk/business-government/products/os-open-built-up-areas "OS Open Built Up Areas Product Information Page") for OS Open Built Up Areas contains further information and their [product support page]( https://www.ordnancesurvey.co.uk/business-government/tools-support/os-open-built-up-areas "OS Open Built Up Areas Product Support Page") contains links to PDFs providing an [overview]( https://www.ordnancesurvey.co.uk/documents/product-support/user-guide/os-open-built-up-areas-overview.pdf "OS Open Built Up Areas Overview PDF") and [technical specification]( https://www.ordnancesurvey.co.uk/documents/product-support/tech-spec/os-open-built-up-areas-technical-specification.pdf "OS Open Built Up Areas Technical Specification PDF") of the product
 
 ## Are the 2022 Built-Up Areas the same geography as the 2011 Built-Up Areas?
-The 2022 Built-Up Areas were created using a methodology based on the 2011 version. However, there are some notable differences that mean the 2022 Built Up Areas should be considered a new geography and not a continuation of the 2011 Built-Up Areas or 2011 Built-Up Area Subdivisions. This means statistics produced for areas with the same name are not directly comparable. Differences include:
-  •	2022 Built-Up Areas were created using 25m by 25m cells. The 2011 version used 50m by 50m cells.
-  •	2022 Built-Up Areas that are 200 metres or less away from each other have not been merged together to form a single area. The 2022 Built Up Areas are more similar to a layer created from 2011 Built-Up Area Subdivisions and 2011 Built-Up Areas that couldn’t be subdivided.
+The 2022 Built-Up Areas were created using a methodology based on the 2011 version. However, there are some notable differences that mean the 2022 Built Up Areas should be considered a new geography and not a continuation of the 2011 Built-Up Areas or 2011 Built-Up Area Subdivisions. This means statistics produced for areas with the same name are not directly comparable. 
+
+Differences include:
+* 2022 Built-Up Areas were created using 25m by 25m cells. The 2011 version used 50m by 50m cells.
+* 2022 Built-Up Areas that are 200 metres or less away from each other have not been merged together to form a single area. The 2022 Built Up Areas are more similar to a layer created from 2011 Built-Up Area Subdivisions and 2011 Built-Up Areas that couldn’t be subdivided.
 
 ## Will a ‘merged’ version of 2022 Built Up Areas that joins nearby areas together, like the 2011 Built-Up Areas did, be produced?
 Yes. This is planned for 2023 and will be called Built-Up Conglomerations.
