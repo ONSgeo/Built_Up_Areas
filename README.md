@@ -21,8 +21,8 @@ Yes. This is planned for 2023 and will be called Built-Up Conglomerations.
 ## Why do only some 2022 Built-Up Areas have Welsh or Gaelic names?
 We have only used the data contained in OS Open Built Up Areas to populate our name fields. If Ordnance Survey do not currently hold a Welsh or Gaelic name in their data used to assign names to areas then we cannot currently include them.
 
-## How are Built-Up Areas (2022) in Scotland different to Scottish Settlements and Localities?
-Built-Up Areas in Scotland are not designed to replace Scottish Settlements or Localities. The methodologies used to create these products are different so are not comparable. 
+## How are Built-Up Areas (2022) in Scotland different to NRS Scottish Settlements and Localities?
+Built-Up Areas in Scotland are not designed to replace [NRS Settlements or Localities]https://www.nrscotland.gov.uk/statistics-and-data/statistics/statistics-by-theme/population/population-estimates/settlements-and-localities" NRS Settlements or Localities webpage"). The methodologies used to create these products are different so are not comparable. NRS have also published a [short paper] https://www.nrscotland.gov.uk/files//statistics/population-estimates/sl-bua-note-nov-22.pdf “NRS Settlements and Localities and OS Open Built Up Areas  PDF note to users") that explains the key differences between the two products and suggestions on which product to use in Scotland in certain circumstances. 
 
 ## How were centroids for Built-Up Areas (2022) calculated?
 Due to some Built-Up Areas having odd shapes, centroid locations calculated in R using the st_centroid and st_point_on_surfance functions in the sf package were deemed inappropriate. This was because centroids either didn’t fall within the area they were meant to represent or because they were placed in locations that could not be considered near the centre of features. As such, a custom method was used. 100,000 random points were generated inside each area. A [convex hull]( https://en.wikipedia.org/wiki/Convex_hull "Convex hull Wikipedia page") was then produced around each area. Whichever of the 100,000 points in an area was furthest away from its convex hull was selected as that areas centroid. For a limited number of areas a further adjustment was done to ensure all centroids would intersect with clipped to the coastline 2022 Local Authority District boundaries.
@@ -35,10 +35,10 @@ No. If they did they would have also been assigned the K08 entity code.
 
 ## Does ONS intend to publish their own version of the Built Up Extents and Non Built Up Extents layers available in OS Open Built Up Areas?
 OS Open Built Up Areas actually consists of three layers:
-  * Built Up Areas
-  * Built Up Extents
-  *  Non Built Up Extents
+* Built Up Areas
+* Built Up Extents
+* Non Built Up Extents
 
 The ‘Built Up Areas’ layer is the most similar to previous geographies and is what we would consider to the ‘primary’ layer, hence why it has been assigned GSS codes. The other layers do not have separate GSS Codes, instead they have been given ‘Related to GSS Codes’ identifiers in the OS dataset. 
 
-We are exploring how we can best support these layers whilst also adhering to the [GSS Geography Policy](https://analysisfunction.civilservice.gov.uk/policy-store/gss-geography-policy/ "GSS Geography Policy"). In the meantime we suggest you access these layers via the [OS Data Hub](https://osdatahub.os.uk/downloads/open/BuiltUpAreas "OS Open Built Up Areas Download Page"), but if this option does not meet your requirements please e-mail ons.geography@ons.gov.uk and we will do our best to help. 
+We are exploring how we can best support these layers whilst also adhering to the [GSS Geography Policy](https://analysisfunction.civilservice.gov.uk/policy-store/gss-geography-policy/ "GSS Geography Policy"). In the meantime we suggest you access these layers via the [OS Data Hub](https://osdatahub.os.uk/downloads/open/BuiltUpAreas "OS Open Built Up Areas Download Page") if needed, but if this option does not meet your requirements please e-mail ons.geography@ons.gov.uk and we will do our best to help. 
